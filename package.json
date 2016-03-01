@@ -1,0 +1,14 @@
+{
+  "name": "quickmassage",
+  "version": "1.0.0",
+  "description": "Quick massage shuffler",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "andremw",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
