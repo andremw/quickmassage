@@ -115,7 +115,7 @@ function fillSelectedHours() {
     hLength = hours.length;
     for (var j = 0; j < hLength; j++) {
       hour = hours[j].trim();
-      if (selectedHours.indexOf(hour) === -1) {
+      if (hour && selectedHours.indexOf(hour) === -1) {
         selectedHours.push(hour);
       }
     }
@@ -143,7 +143,7 @@ function fillSemanaAnteriorSheet() {
   clearSemanaAnterior();
 
   for (var i = 0; i < linesLen; i++) {
-    sheetSemanaAnterior.getRange('A' + (i + 1)).setValue(lines[i][1]);
+    sheetSemanaAnterior.getRange('A' + (i + 1)).setValue(lines[i][1] || '');
   }
 }
 
